@@ -126,12 +126,12 @@
   </li>
         <li class="menu-item menu-item-categories">
 
-    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">22</span></a>
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">21</span></a>
 
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">55</span></a>
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">54</span></a>
 
   </li>
         <li class="menu-item menu-item-archives">
@@ -269,11 +269,11 @@
 <h3 id="首先创建一个新的项目，创建就不多说了，相信用过github的小伙伴都会"><a href="#首先创建一个新的项目，创建就不多说了，相信用过github的小伙伴都会" class="headerlink" title="首先创建一个新的项目，创建就不多说了，相信用过github的小伙伴都会"></a>首先创建一个新的项目，创建就不多说了，相信用过github的小伙伴都会</h3><h3 id="然后克隆你的项目到本地"><a href="#然后克隆你的项目到本地" class="headerlink" title="然后克隆你的项目到本地"></a>然后克隆你的项目到本地</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone 项目地址</span><br></pre></td></tr></table></figure>
 <h3 id="然后正常的创建项目和提交代码"><a href="#然后正常的创建项目和提交代码" class="headerlink" title="然后正常的创建项目和提交代码"></a>然后正常的创建项目和提交代码</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">cd  创建的项目</span><br><span class="line">git add .</span><br><span class="line">git commit -m <span class="string">&#x27;提交master上代码&#x27;</span> <span class="comment">//注意我们是在master主分支上。（当前是只有master分支的）</span></span><br><span class="line">git push</span><br></pre></td></tr></table></figure>
 <h3 id="最关键的来了，建立gh-pages分支，再将项目重新上传到该分支上"><a href="#最关键的来了，建立gh-pages分支，再将项目重新上传到该分支上" class="headerlink" title="最关键的来了，建立gh-pages分支，再将项目重新上传到该分支上"></a>最关键的来了，建立gh-pages分支，再将项目重新上传到该分支上</h3><p>master分支仅是浏览代码，而无法将页面直接在网页打开，而gh-pages分支则是用于直接浏览源码页面的分支。当我们写项目的时候，需要部署一个预览页面，就可以采用github的gh-pages分支制作GitHub Pages</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">git checkout -b gh-pages  <span class="comment">//新建一个gh-pages分支并切换到该分支 创建分支</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//分开来就是 创建分支：git branch &lt;分支名&gt;    git checkout &lt;分支名&gt;</span></span><br><span class="line"></span><br><span class="line">git add .</span><br><span class="line">git commit -m <span class="string">&quot;提交gh-pages上代码&quot;</span></span><br><span class="line">git push -u origin gh-pages</span><br><span class="line"></span><br><span class="line">接下来就可以成功访问啦!</span><br><span class="line"></span><br><span class="line"><span class="string">`访问地址 https://用户名.github.io/项目名称/文件路径`</span></span><br><span class="line"></span><br><span class="line">网址实在记不住的话可以点击github上你项目右上角<span class="title class_">Settings</span>-&gt;左边pages-&gt;第一行<span class="title class_">GitHub</span> <span class="title class_">Pages</span>就有你的网址</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">git checkout -b gh-pages  <span class="comment">//新建一个gh-pages分支并切换到该分支 创建分支</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//分开来就是 创建分支：git branch &lt;分支名&gt;    git checkout &lt;分支名&gt;</span></span><br><span class="line"></span><br><span class="line">git add .</span><br><span class="line">git commit -m <span class="string">&quot;提交gh-pages上代码&quot;</span></span><br><span class="line">git push -u origin gh-pages</span><br><span class="line"></span><br><span class="line">接下来就可以成功访问啦!</span><br><span class="line"></span><br><span class="line"><span class="string">`访问地址 https://用户名.github.io/项目名称/文件路径`</span></span><br><span class="line"></span><br><span class="line">网址实在记不住的话可以点击github上你项目右上角Settings-&gt;左边pages-&gt;第一行GitHub Pages就有你的网址</span><br></pre></td></tr></table></figure>
 <h3 id="但是，我每次都要上传两份代码，太繁琐了"><a href="#但是，我每次都要上传两份代码，太繁琐了" class="headerlink" title="但是，我每次都要上传两份代码，太繁琐了"></a>但是，我每次都要上传两份代码，太繁琐了</h3><p>master修改后如何自动同步到gh-pages分支<br>每次当作品发生更改变动后，要先提交到master分支然后切换到gh-pages分支又重新提交一次，显然这个过程非常繁琐。接下我们介绍一种方法，只需提交到master分支即可，gh-pages分支无需重新提交，就可实现在线预览：</p>
 <p>打开github项目文件的根目录，先找到.git 这个文件夹（文件夹默认是隐藏的），然后找到config这个文件，并打开该文件，将以下两行添加到[remote “origin”]部分</p>
-<p>push &#x3D; +refs&#x2F;heads&#x2F;master:refs&#x2F;heads&#x2F;gh-pages</p>
-<p>push &#x3D; +refs&#x2F;heads&#x2F;master:refs&#x2F;heads&#x2F;master</p>
+<p>push = +refs/heads/master:refs/heads/gh-pages</p>
+<p>push = +refs/heads/master:refs/heads/master</p>
 <p>测试了下，可以</p>
 <p>上面说的是将相同的代码同时上传到master和gh-pges里</p>
 <h3 id="那如何将打包后的dist文件夹push到gh-pages"><a href="#那如何将打包后的dist文件夹push到gh-pages" class="headerlink" title="那如何将打包后的dist文件夹push到gh-pages"></a>那如何将打包后的dist文件夹push到gh-pages</h3><p>第一步跟上面一样写完的项目上传到master上去，</p>
@@ -281,13 +281,13 @@
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">npm run build</span><br><span class="line">git checkout -b gh-pages</span><br><span class="line">git add -f dist</span><br><span class="line">git commit -m <span class="string">&#x27;first commit&#x27;</span></span><br><span class="line">git subtree push --prefix dist origin gh-pages</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <p>然后就可以直接在浏览器查看效果了</p>
 <h3 id="既然说到打包了，那就说一下打包遇到的问题"><a href="#既然说到打包了，那就说一下打包遇到的问题" class="headerlink" title="既然说到打包了，那就说一下打包遇到的问题"></a>既然说到打包了，那就说一下打包遇到的问题</h3><h4 id="vue2"><a href="#vue2" class="headerlink" title="vue2:"></a>vue2:</h4><blockquote>
-<p>1、img标签src引用的图片打包上线后无法加载<br>解决方案：config&#x2F;index.js 中的 assetsPublicPath值改成 .&#x2F; （比默认多一个.）</p>
+<p>1、img标签src引用的图片打包上线后无法加载<br>解决方案：config/index.js 中的 assetsPublicPath值改成 ./ （比默认多一个.）</p>
 </blockquote>
-<p>assetsPublicPath：资源的根目录。这个是通过http服务器运行的url路径。因为webapp和static中间还有层dist,所以要用’.&#x2F;‘<br><img src="/images/vue2question01.jpg" alt="问题1"></p>
+<p>assetsPublicPath：资源的根目录。这个是通过http服务器运行的url路径。因为webapp和static中间还有层dist,所以要用’./‘<br><img src="/images/vue2question01.jpg" alt="问题1"></p>
 <blockquote>
-<p>2、css中的背景图片打包上线后无法加载<br>解决方案：build&#x2F;utils.js 中的 fallback: ‘vue-style-loader’ 下一行加上 publicPath: ‘..&#x2F;..&#x2F;‘（fallback那行检查末尾有没有英文逗号，没有加上）</p>
+<p>2、css中的背景图片打包上线后无法加载<br>解决方案：build/utils.js 中的 fallback: ‘vue-style-loader’ 下一行加上 publicPath: ‘../../‘（fallback那行检查末尾有没有英文逗号，没有加上）</p>
 </blockquote>
-<p>因为打包后生成的是dist文件夹 文件夹中是static文件夹和index.html static文件夹中包含css fonts img js等文件夹 我们写好的css内容在css文件夹中的app.css中 要访问的图片内容在img下 所以要..&#x2F;..&#x2F;才可以访问到<br><img src="/images/vue2question02.jpg" alt="问题2"></p>
+<p>因为打包后生成的是dist文件夹 文件夹中是static文件夹和index.html static文件夹中包含css fonts img js等文件夹 我们写好的css内容在css文件夹中的app.css中 要访问的图片内容在img下 所以要../../才可以访问到<br><img src="/images/vue2question02.jpg" alt="问题2"></p>
 <blockquote>
 <p>3、动态绑定src 应使用require方式引入<br><img src="/images/vue2question03.jpg" alt="问题3"></p>
 </blockquote>
@@ -421,13 +421,13 @@
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">22</span>
+        <span class="site-state-item-count">21</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">55</span>
+        <span class="site-state-item-count">54</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
